@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V1.TestAutomation.Common", "V1.TestAutomation.Common\V1.TestAutomation.Common.csproj", "{02D277E5-2624-4D31-99B4-7F55B150F5CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V1.TestAutomation.SampleApp.Specs", "V1.TestAutomation.SampleApp.Specs\V1.TestAutomation.SampleApp.Specs.csproj", "{B78CE9FB-3D90-4EB7-88BB-F7FD9504EB4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V1.TestAutomation.SampleApp", "V1.TestAutomation.SampleApp\V1.TestAutomation.SampleApp.csproj", "{FABA4504-85C9-402A-867D-D69DEF6F0538}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{02D277E5-2624-4D31-99B4-7F55B150F5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02D277E5-2624-4D31-99B4-7F55B150F5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02D277E5-2624-4D31-99B4-7F55B150F5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B78CE9FB-3D90-4EB7-88BB-F7FD9504EB4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B78CE9FB-3D90-4EB7-88BB-F7FD9504EB4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B78CE9FB-3D90-4EB7-88BB-F7FD9504EB4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B78CE9FB-3D90-4EB7-88BB-F7FD9504EB4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABA4504-85C9-402A-867D-D69DEF6F0538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABA4504-85C9-402A-867D-D69DEF6F0538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABA4504-85C9-402A-867D-D69DEF6F0538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABA4504-85C9-402A-867D-D69DEF6F0538}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
