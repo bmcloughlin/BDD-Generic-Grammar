@@ -22,10 +22,14 @@ namespace V1.TestAutomation.Common
             if (Routes.TryGetValue(key, out url))
             {
                 url = ApplicationRoot + url;
-                return true;
+                
+            }
+            else
+            {
+                url = key;
             }
 
-            return false;
+            return true;
         }
 
     }

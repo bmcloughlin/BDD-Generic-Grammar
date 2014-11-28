@@ -85,7 +85,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
 #line 11
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
  testRunner.Then("a validation message is displayed with the message The Email field is required.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -104,7 +104,7 @@ this.FeatureBackground();
 #line 15
  testRunner.Given("I type badlyformattedemail into Email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 17
  testRunner.Then("a validation message is displayed with the message The Email field is not a valid" +
                     " e-mail address.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -124,7 +124,7 @@ this.FeatureBackground();
 #line 20
  testRunner.Given("I type bmcloughlin@gmail.com into Email", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 21
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 22
  testRunner.Then("a validation message is displayed with the message The Password field is required" +
                     ".", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -146,7 +146,7 @@ this.FeatureBackground();
 #line 26
   testRunner.And("I type Pass into Password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 28
  testRunner.Then("a validation message is displayed with the message The Password must be at least " +
                     "6 characters long.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -170,7 +170,7 @@ this.FeatureBackground();
 #line 33
   testRunner.And("I type Password456 into ConfirmPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 34
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 35
  testRunner.Then("a validation message is displayed with the message The password and confirmation " +
                     "password do not match.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -194,7 +194,7 @@ this.FeatureBackground();
 #line 40
   testRunner.And("I type Password123 into ConfirmPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 41
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 42
  testRunner.Then("a validation message is displayed with the message Passwords must have at least o" +
                     "ne non letter or digit character.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -218,7 +218,7 @@ this.FeatureBackground();
 #line 48
   testRunner.And("I type Password123_ into ConfirmPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 49
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 50
  testRunner.Then("the title of the page should start with Home Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -243,7 +243,7 @@ this.FeatureBackground();
 #line 57
   testRunner.And("I type Password123_ into ConfirmPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58
- testRunner.When("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 59
   testRunner.And("I click the Log off link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 60
@@ -255,7 +255,7 @@ this.FeatureBackground();
 #line 63
   testRunner.And("I type Password123_ into ConfirmPassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 64
-  testRunner.And("I click the Register button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("I click the button with label Register", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 65
  testRunner.Then("a validation message is displayed where the message ends with is already taken.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

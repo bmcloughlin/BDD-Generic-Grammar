@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="nunit.framework, Version=2.6.3.13283, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -49,6 +52,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegisterUser.feature</DependentUpon>
     </Compile>
+    <Compile Include="BingSearch.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BingSearch.feature</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\V1.TestAutomation.Common\V1.TestAutomation.Common.csproj">
@@ -57,11 +65,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
     <None Include="RegisterUser.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RegisterUser.feature.cs</LastGenOutput>
+    </None>
+    <None Include="BingSearch.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BingSearch.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -78,7 +92,7 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /E /Y "$(ProjectDir)Drivers" "$(ProjectDir)\$(OutDir)"</PostBuildEvent>
+    <PostBuildEvent>start xcopy /Y "$(ProjectDir)Drivers" "$(ProjectDir)$(OutDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

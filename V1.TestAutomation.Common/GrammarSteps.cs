@@ -9,6 +9,7 @@ namespace V1.TestAutomation.Common
     [Binding]
     public class GrammarSteps : Common
     {
+      
         [Given]
         public void Given_I_add_P0_to_the_cache_as_P1_for_reuse(string p0, string p1)
         {
@@ -30,11 +31,19 @@ namespace V1.TestAutomation.Common
             Assert.IsTrue(Br.Title.StartsWith(p0));
         }
 
+
         [When]
-        public void When_I_click_the_P0_button(string p0)
+        public void When_I_click_the_button_with_P0_P1(string p0, string p1)
         {
-           Br.FindElement(By.XPath(@"//input[@value='" + p0 + "']")).Click();
+            switch (p0.ToUpper())
+            {
+                case "LABEL": Br.FindElement(By.XPath(@"//input[@value='" + p1 + "']")).Click();
+                    break;
+                case "ID": Br.FindElement(By.Id(p1)).Click();
+                    break;
+            }
         }
+
 
         [When]
         public void When_I_click_the_P0_link(string p0)
