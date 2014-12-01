@@ -11,6 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "V1.TestAutomation.SampleApp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56A0696E-9DCC-4070-980C-62936B4BD232}"
 	ProjectSection(SolutionItems) = preProject
+		BDD-Generic-Grammar.nuspec = BDD-Generic-Grammar.nuspec
 		build.bat = build.bat
 	EndProjectSection
 EndProject

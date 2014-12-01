@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+	<id>BDD-Generic-Grammar</id>
+	<version>$version$</version>
+	<title>BDD-Generic-Grammar</title>
+	<authors>Brendan McLoughlin, Version 1</authors>
+	<owners>Brendan McLoughlin, Version 1</owners>
+	<licenseUrl></licenseUrl>
+	<projectUrl></projectUrl>
+	<iconUrl></iconUrl>
+	<requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<description>A generic grammar for acceptance criteria testing using Specflow, Nunit and Selenium Web Drivers.</description>
+	<releaseNotes></releaseNotes>
+	<copyright>Copyright &#x00A9; Version 1 Software Limited.  All rights reserved.</copyright>
+	<tags>bdd specflow version1</tags>
+  </metadata>
+  <files>
+	<file src="BDD-Generic-Grammar\bin\$configuration$\V1.TestAutomation.Common.dll" target="lib\net40\" />
+  </files>
+</package>
