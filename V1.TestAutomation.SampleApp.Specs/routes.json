@@ -1,0 +1,6 @@
+﻿{
+    "Home": "/",
+    "Register User": "/Account/Register",
+    "Login": "/Account/Login",
+    "Contact": "/Home/Contact"
+}

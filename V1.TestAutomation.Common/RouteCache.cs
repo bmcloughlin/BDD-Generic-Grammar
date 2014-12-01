@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace V1.TestAutomation.Common
 {
@@ -11,10 +13,8 @@ namespace V1.TestAutomation.Common
         static RouteCache()
         {
             ApplicationRoot = ConfigurationManager.AppSettings["applicationRoot"];
-            Routes = new Dictionary<string, string>
-            {
-                {"Register User", "/Account/Register"}
-            };
+            var json = File.ReadAllText(@"routes.json");
+            Routes = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
         }
 
         public static bool TryGetUrl(string key, out string url)
@@ -22,10 +22,14 @@ namespace V1.TestAutomation.Common
             if (Routes.TryGetValue(key, out url))
             {
                 url = ApplicationRoot + url;
-                return true;
+                
+            }
+            else
+            {
+                url = key;
             }
 
-            return false;
+            return true;
         }
 
     }
