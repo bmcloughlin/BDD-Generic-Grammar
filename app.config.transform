@@ -1,0 +1,28 @@
+
+<configuration>
+  <configSections>
+    <section name="autofac" type="Autofac.Configuration.SectionHandler, Autofac.Configuration" />
+  </configSections>
+  <specFlow>
+        
+    <stepAssemblies>
+      <stepAssembly assembly="V1.TestAutomation.Common" />
+    </stepAssemblies>
+    
+  </specFlow>
+
+<appSettings>
+  <add key="applicationRoot" value="http://localhost:52442" />
+</appSettings>
+  
+  <autofac>
+    <components>
+     <component type=" OpenQA.Selenium.PhantomJS.PhantomJSDriver, WebDriver" service="OpenQA.Selenium.IWebDriver, WebDriver" />
+      <!--   <component
+          type=" OpenQA.Selenium.Chrome.ChromeDriver, WebDriver"
+          service="OpenQA.Selenium.IWebDriver, WebDriver" />-->
+    </components>
+  </autofac>
+  
+
+</configuration>

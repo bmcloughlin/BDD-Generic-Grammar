@@ -1,0 +1,1 @@
+nuget pack "BDD-Generic-Grammar.nuspec" -NoPackageAnalysis -verbosity detailed  -Version 1.0.0.0 -p Configuration="debug"

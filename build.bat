@@ -24,3 +24,10 @@ mkdir Build\lib
 mkdir Build\lib\net40
 
 %nuget% pack " BDD-Generic-Grammar.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+
+
+
+
+
+
+<!--C:\work\BDD-Generic-Grammar>nuget pack "BDD-Generic-Grammar.nuspec" -NoPackageAnalysis -verbosity detailed  -Version 1.0.0.0 -p Configuration="debug"-->

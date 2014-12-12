@@ -1,24 +1,34 @@
 <?xml version="1.0"?>
 <package >
-  <metadata>
-	<id>BDD-Generic-Grammar</id>
+	<metadata>
+	<id>Version1-Automation-Grammar</id>
 	<version>$version$</version>
-	<title>BDD-Generic-Grammar</title>
+	<title>Version1-Automation-Grammar</title>
 	<authors>Brendan McLoughlin, Version 1</authors>
 	<owners>Brendan McLoughlin, Version 1</owners>
-	<licenseUrl></licenseUrl>
-	<projectUrl></projectUrl>
-	<iconUrl></iconUrl>
 	<requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<description>A generic grammar for acceptance criteria testing using Specflow, Nunit and Selenium Web Drivers.</description>
 	<releaseNotes></releaseNotes>
 	<copyright>Copyright &#x00A9; Version 1 Software Limited.  All rights reserved.</copyright>
 	<tags>bdd specflow version1</tags>
-  </metadata>
-  <files>
-	<file src="BDD-Generic-Grammar\bin\$configuration$\V1.TestAutomation.Common.dll" target="lib\net40\" />
-  </files>
-    <dependencies>
-      <dependency id="SpecFlow.NUnit" version="1.1.1" />
-    </dependencies>
+	<dependencies>
+		<dependency id="NUnit" version="2.6.3"  />
+		<dependency id="Autofac" version="3.5.2" />
+		<dependency id="Autofac.Configuration" version="3.3.0" />
+		<dependency id="Newtonsoft.Json" version="6.0.6" />
+		<dependency id="Selenium.WebDriver" version="2.44.0" />
+		<dependency id="SpecFlow.NUnit" version="1.1.1" />
+	</dependencies>
+	</metadata>
+	<files>
+		<file src="V1.TestAutomation.SampleApp.Specs\bin\$configuration$\V1.TestAutomation.Common.dll" target="lib\net40\" />
+		<file src="V1.TestAutomation.SampleApp.Specs\*.json" target="Content"/>
+		<file src="V1.TestAutomation.SampleApp.Specs\bingsearch.feature" target="Content"/>
+		<file src="V1.TestAutomation.SampleApp.Specs\drivers\*.*" target="Content\Drivers"/>
+		<file src="app.config.transform" target="Content"/>
+		<file src="install.ps1" target="Tools"/>
+	</files>
+ 
 </package>
+
+
