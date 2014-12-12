@@ -31,3 +31,21 @@ Useful Links
 - http://www.specflow.org/
 - http://cukes.info/gherkin.html
 - http://autofac.org/
+
+Grammar Reference
+=====================
+
+- ? represents a parameter to be provided.
+
+<table>
+<tr>
+<td><b>Grammar Element</b></td>
+<td><b>Available to Sections</b></td>
+<td><b>Usage / Description</b></td>
+</tr>
+<tr>
+<td>Given I go to the ? screen</td> 
+<td>Given</td>
+<td>Will navigate to the specified screen</td>
+</tr>
+</table>
