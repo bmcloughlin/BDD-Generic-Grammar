@@ -164,15 +164,28 @@ this.FeatureBackground();
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Label",
+                        "Type",
+                        "Value"});
+            table1.AddRow(new string[] {
+                        "Email",
+                        "text",
+                        "bmcloughlin@gmail.com"});
+            table1.AddRow(new string[] {
+                        "Password",
+                        "text",
+                        "Password123"});
+            table1.AddRow(new string[] {
+                        "ConfirmPassword",
+                        "text",
+                        "Password456"});
 #line 31
- testRunner.Given("I type \'bmcloughlin@gmail.com\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 32
-  testRunner.And("I type \'Password123\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 33
-  testRunner.And("I type \'Password456\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 34
+ testRunner.Given("I fill the following input values:", ((string)(null)), table1, "Given ");
+#line 36
  testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 35
+#line 37
  testRunner.Then("a validation message is displayed with the message \'The password and confirmation" +
                     " password do not match.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -184,19 +197,19 @@ this.FeatureBackground();
         public virtual void StrengthValidationOfPasswordFails()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Strength validation of Password fails", ((string[])(null)));
-#line 37
+#line 41
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 38
- testRunner.Given("I type \'bmcloughlin@gmail.com\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 39
-  testRunner.And("I type \'Password123\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 40
-  testRunner.And("I type \'Password123\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 41
- testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 42
+ testRunner.Given("I type \'bmcloughlin@gmail.com\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 43
+  testRunner.And("I type \'Password123\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 44
+  testRunner.And("I type \'Password123\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 45
+ testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 46
  testRunner.Then("a validation message is displayed with the message \'Passwords must have at least " +
                     "one non letter or digit character.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -208,19 +221,19 @@ this.FeatureBackground();
         public virtual void SuccessfulRegistration()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Successful Registration", ((string[])(null)));
-#line 45
+#line 49
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 46
- testRunner.Given("I type \'autotest.uniquevalue@gmail.com\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 47
-  testRunner.And("I type \'Password123_\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 48
-  testRunner.And("I type \'Password123_\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 49
- testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 50
+ testRunner.Given("I type \'autotest.uniquevalue@gmail.com\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 51
+  testRunner.And("I type \'Password123_\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 52
+  testRunner.And("I type \'Password123_\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 53
+ testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 54
  testRunner.Then("the title of the page should start with \'Home Page\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -231,33 +244,33 @@ this.FeatureBackground();
         public virtual void AlreadyTakenValidationOfEmailFails()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Already taken validation of Email fails", ((string[])(null)));
-#line 53
+#line 57
 this.ScenarioSetup(scenarioInfo);
 #line 6
 this.FeatureBackground();
-#line 54
- testRunner.Given("I add \'autotest.uniquevalue@gmail.com\' to the cache as \'email\' for reuse", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 55
-  testRunner.And("I type \'cache.email\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 56
-  testRunner.And("I type \'Password123_\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 57
-  testRunner.And("I type \'Password123_\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 58
- testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I add \'autotest.uniquevalue@gmail.com\' to the cache as \'email\' for reuse", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 59
-  testRunner.And("I click the \'Log off\' link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 60
-  testRunner.And("I click the \'Register\' link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 61
   testRunner.And("I type \'cache.email\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 62
+#line 60
   testRunner.And("I type \'Password123_\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 63
+#line 61
   testRunner.And("I type \'Password123_\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 62
+ testRunner.When("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 63
+  testRunner.And("I click the \'Log off\' link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 64
-  testRunner.And("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("I click the \'Register\' link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 65
+  testRunner.And("I type \'cache.email\' into \'Email\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 66
+  testRunner.And("I type \'Password123_\' into \'Password\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 67
+  testRunner.And("I type \'Password123_\' into \'ConfirmPassword\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 68
+  testRunner.And("I click the button with \'label\' \'Register\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 69
  testRunner.Then("a validation message is displayed where the message ends with \'is already taken.\'" +
                     "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

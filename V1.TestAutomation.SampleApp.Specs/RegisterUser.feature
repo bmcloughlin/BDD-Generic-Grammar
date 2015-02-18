@@ -28,11 +28,15 @@ Scenario: Length validation of Password fails
 	Then a validation message is displayed with the message 'The Password must be at least 6 characters long.'
 
 Scenario: Confirmation validation of Password fails
-	Given I type 'bmcloughlin@gmail.com' into 'Email'
-		And I type 'Password123' into 'Password'
-		And I type 'Password456' into 'ConfirmPassword'
+	Given I fill the following input values:
+		| Label           | Type | Value                 |
+		| Email           | text | bmcloughlin@gmail.com |
+		| Password        | text | Password123           |
+		| ConfirmPassword | text | Password456           |
 	When I click the button with 'label' 'Register'
 	Then a validation message is displayed with the message 'The password and confirmation password do not match.'
+
+
 
 Scenario: Strength validation of Password fails
 	Given I type 'bmcloughlin@gmail.com' into 'Email'
